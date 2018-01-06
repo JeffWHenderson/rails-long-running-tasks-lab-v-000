@@ -2241,3 +2241,15 @@ AbstractController::ActionNotFound (The action 'upload' could not be found for S
 
 
   Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.7ms)
+
+
+Started POST "/songs/upload" for 74.139.8.180 at 2018-01-06 20:30:49 +0000
+Cannot render console from 74.139.8.180! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SongsController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/aqc0BhVVYMRKtcyYA0G+QiMD5CnqRzTbl67Uz8vt9wwHgTTPUopa+uY+1ZtRzDI+ukmonhBkgaiPP/BwTMvqQ==", "commit"=>"Upload Files"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+RuntimeError ({"utf8"=>"✓", "authenticity_token"=>"/aqc0BhVVYMRKtcyYA0G+QiMD5CnqRzTbl67Uz8vt9wwHgTTPUopa+uY+1ZtRzDI+ukmonhBkgaiPP/BwTMvqQ==", "commit"=>"Upload Files", "controller"=>"songs", "action"=>"upload"}):
+  app/controllers/songs_controller.rb:8:in `upload'
+
+
