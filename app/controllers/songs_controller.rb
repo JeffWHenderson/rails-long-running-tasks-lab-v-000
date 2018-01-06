@@ -16,6 +16,7 @@ class SongsController < ApplicationController
     #    t.datetime "updated_at", null: false
     #    t.integer  "artist_id"
     #  end
+    redirect_to songs_path
   end
 
   def show
