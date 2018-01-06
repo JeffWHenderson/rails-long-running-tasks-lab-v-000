@@ -4,6 +4,10 @@ class SongsController < ApplicationController
     @songs = Song.all
   end
 
+  def upload
+    raise params.inspect
+  end
+
   def show
     @song = Song.find(params[:id])
   end
