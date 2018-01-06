@@ -6,7 +6,14 @@ class SongsController < ApplicationController
 
   def upload
      CSV.foreach(params[:titles].path, headers: true) do |title| 
+       Song.create(title: title[0])
 
+       Song Clean,ARTIST CLEAN,Release Year,COMBINED,First?,Year?,PlayCount,F*G
+       Caught Up in You,.38 Special,1982,Caught Up in You by .38 Special,1,1,82,82
+       t.string   "title"
+       t.datetime "created_at", null: false
+       t.datetime "updated_at", null: false
+       t.integer  "artist_id"
      end
   end
 
