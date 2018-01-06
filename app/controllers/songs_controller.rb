@@ -6,7 +6,7 @@ class SongsController < ApplicationController
   end
 
   def upload
-    raise params["file"].inspect
+    raise CSV.foreach(params[:titles].inspect
      CSV.foreach(params[:titles].path, headers: true) do |title| 
        Song.create(title: title[0])
      
