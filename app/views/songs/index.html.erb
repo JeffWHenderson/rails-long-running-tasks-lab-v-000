@@ -1,4 +1,8 @@
 <ul>
+  <%= form_for class="" action="index.html" method="post" %>
+    
+  <% end %>
+    
 <% @songs.each do |song| %>
   <li><%= display_artist(song) %> - <%= link_to song.title, song_path(song) %></li>
 <% end %>
