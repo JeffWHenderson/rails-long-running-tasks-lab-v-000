@@ -1,6 +1,7 @@
 <ul>
-  <%= form_for class="" action="index.html" method="post" %>
-    
+  <%= form_tag songs_upload_path, multipart: true do %>
+    <%= file_field_tag :titles %>
+    <%= submit_tag "Upload Files" %>
   <% end %>
     
 <% @songs.each do |song| %>
